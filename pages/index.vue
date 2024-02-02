@@ -78,9 +78,9 @@
   </div>
 </template>
 <script setup>
-import galvalumeImage from "@/assets/images/coil/galvalume.webp";
-import ppglImage from "@/assets/images/coil/ppgl.webp";
-import galvanisImage from "@/assets/images/coil/galvanis.webp";
+import galvalumeImage from "@/assets/images/coil/galvalumecoil.webp";
+import ppglImage from "@/assets/images/coil/ppglcoil.webp";
+import galvanisImage from "@/assets/images/coil/galvaniscoil.webp";
 const listProduct = ref([
   {
     productImage: galvalumeImage,
