@@ -16,18 +16,18 @@ export default defineNuxtConfig({
     "nuxt-schema-org",
     "nuxt-jsonld",
   ],
-  // gtag: {
-  //   id: process.env.GTAG_ID,
-  // },
+  gtag: {
+    id: process.env.GTAG_ID,
+  },
   site: {
-    url: "https://takobaja.co.id/",
+    url: "https://takobajaprima.co.id/",
     name: "PT Tako Baja Prima",
   },
   schemaOrg: {
     identity: {
       type: "Organization",
       name: "PT Tako Baja Prima",
-      url: "https://takobaja.co.id/",
+      url: "https://takobajaprima.co.id/",
       logo: "",
     },
   },
