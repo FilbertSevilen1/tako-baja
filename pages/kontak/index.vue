@@ -8,21 +8,23 @@
                 alt="This is a background"
                 title="This is a background"
             />
-            <div class="flex flex-col items-center py-4">
-        <div class="mt-20">
-            <h2 class="text-blue-900 text-2xl md:text-4xl font-bold mt-24">
+            <div class="mt-20">
+              <h2 class="text-blue-900 text-2xl md:text-4xl font-bold mt-24 align-middle">
                 Kontak
-            </h2>
-        </div>
+              </h2>
+            </div>
+          </div>
+        <div class="flex flex-col items-center py-4">
+        
         <div>
             <div>
-                <h1>Alamat Perusahaan :</h1>
+                <h1 class="text-xl font-bold">Alamat Perusahaan :</h1>
                 <div class="w-80 text-l md:text-xl mb-12">
                     Jalan Citra Raya Tangerang, Ruko the Avenue Blok 203 Nomor 17,
                     <p class="mt-1">Tangerang, Banten</p>
+                    <h1>Jam Buka : Senin - Jumat</h1>
+                    <h1>9:00 s/d 16:00</h1>
                 </div>
-                <h1>Buka : Senin - Jumat</h1>
-                <h1>9:00 s/d 16:00</h1>
                 <img
                 src="@/assets/images/temp/TemporalMap.png"
                 loading="lazy"
@@ -33,8 +35,8 @@
             </div>
         </div>
         <div class="flex flex-col mt-1">
-            <h1>Contact Person :</h1>
-            <h1 class="text-l md:text-xl">Marco</h1> 
+            <h1 class=" font-bold text-l md:text-xl text-center">Media sosial :</h1>
+            <div class="flex flex-row m-1">
             <h1><svg
                 class="mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,8 +62,41 @@
                   />
                 </svg>
               </NuxtLink>Instagram : Tako Baja Prima<br/></h1>
-            </div>
+            <h1><NuxtLink
+              to="https://www.youtube.com/channel/UCJrvnCV1o_0FGlAxWzgZekw"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765c1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6l5.207 3.005l-5.212 2.995z"
+                  fill="#000000"
+                />
+              </svg>
+            </NuxtLink>Youtube : Coil Galvalume PT. Tako Baja Prima</h1>
+            <h1>
+              <NuxtLink 
+                to="https://www.facebook.com/groups/243072462893767/user/100080713962742/"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#000000"
+                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"
+                />
+              </svg>
+            </NuxtLink>Facebook : Tako Baja
+            </h1>
+          </div>
         </div>
+
         </div>
         
     </div>
