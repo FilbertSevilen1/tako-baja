@@ -15,7 +15,11 @@ export default defineNuxtConfig({
     "nuxt-simple-sitemap",
     "nuxt-schema-org",
     "nuxt-jsonld",
+    'nuxt-mapbox'
   ],
+  mapbox: {
+    accessToken: '{API_KEY}'
+  },
   gtag: {
     id: process.env.GTAG_ID,
   },
