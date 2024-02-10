@@ -1,14 +1,14 @@
 <template>
   <div class="container w-full">
     <div class="w-full h-full">
-      <div class="flex flex-col items-center py-4">
-        <div class="my-10 items-center">
+      <div class="flex flex-col items-center">
+        <div class="items-center mx-6">
           <h1 class="text-blue-900 text-2xl md:text-4xl font-bold mt-24 text-center">
             Kontak
           </h1>
-          <h2 class="mt-4 text-xl md:text-2xl">Untuk lebih jelas dapat menghubungi kami di : </h2>
+          <h2 class="mt-4 text-xl md:text-2xl mb-8">Untuk lebih jelas dapat menghubungi kami di : </h2>
         </div>
-        <div class="flex flex-row py-4">
+        <div class="flex flex-col xl:flex-row py-4">
           <div class="items-top mx-6">
             <h2 id="subtitles">Email :</h2>
             <h3 class="w-80 text-l md:text-xl mb-12">takobaja@gmail.com</h3>
@@ -31,7 +31,7 @@
           </div>
           <div class="items-top mx-6">
             <h2 id="subtitles">Contact :</h2>
-            <h3 class="w-80 text-l md:text-xl mb-12"><svg
+            <h3 class="w-80 text-l md:text-xl mb-12 flex"><svg
               class="mr-2"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -42,13 +42,16 @@
                 fill="#000000"
                 d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"
               /></svg
-            >Whatsapp : 0811-8108-927<br />
+            >0811-8108-927<br />
             </h3>
           </div>
         </div>
-        <main>
-          <div id="map"></div>
-        </main>
+        <div class="w-full">
+          <main>
+            <div id="map"></div>
+          </main>
+        </div>
+       
         <div class="flex flex-row mt-4">
           <div class="mt-2 mx-4">
             <NuxtLink to="https://www.instagram.com/takobajaprima/">
@@ -140,11 +143,11 @@ import "mapbox-gl/dist/mapbox-gl.css";
  
       map.on("move", () => {
         // set the vue instance's data.center to the results of the mapbox instance method for getting the center
-        this.center = map.getCenter();
+        let center = map.getCenter();
       });
       map.on("zoom", () => {
         // set the vue instance's data.zoom to the results of the mapbox instance method for getting the zoom
-        this.zoom = map.getZoom();
+        let zoom = map.getZoom();
       });
       map.on("load", () => {
         var el = document.createElement("div");
@@ -160,9 +163,8 @@ import "mapbox-gl/dist/mapbox-gl.css";
 </script>
 <style>
 #map {
-  height: 400px;
+  height: 600px;
   width: 100%;
-  max-width: 600px;
   margin: 0 auto;
   border: 1px solid darkgrey;
 }
