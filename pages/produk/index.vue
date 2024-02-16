@@ -1,27 +1,40 @@
 <template>
-    <div class="container">
-        <div class="mt-20">
-            <h2 class="text-blue-900 text-2xl md:text-4xl font-bold mt-24">
-              Produk Kami
-            </h2>
-            <div class="w-full flex flex-col flex-wrap justify-between">
-              <div v-for="(item, i) in listProduct" :key="i">
-                  <div class="w-full flex flex-col xl:flex-row flex-between my-12 bg-white shadow-2xl items-center">
-                    <div class="w-full h-60 md:w-80 md:h-80 flex justify center">
-                        <img :src="item.productImage" class="w-full h-full" loading="lazy" :alt="item.productTitle" :title="item.productTitle">
-                       
-                    </div>
-                    <div class="w-full xl:w-3/4 flex flex-col p-8">
-                        <p class="text-2xl md:text-4xl my-4 font-bold">
-                            {{ item.productTitle }}
-                        </p>
-                        <p class="text-xl md:text-2xl w-full">{{item.productContent}}</p>
-                    </div>
-                  </div>
-              </div>
+  <div class="container">
+    <div class="w-full mb-8">
+      <div class="w-full flex flex-col items-center">
+        <h1
+          class="text-blue-900 text-2xl md:text-4xl font-bold text-center mt-16"
+        >
+          Produk
+        </h1>
+      </div>
+      <div class="w-full flex flex-col flex-wrap justify-between">
+        <div v-for="(item, i) in listProduct" :key="i">
+          <div
+            class="w-full flex flex-col xl:flex-row flex-between my-12 bg-white shadow-2xl items-center"
+          >
+            <div class="w-full h-60 md:w-80 md:h-80 flex justify center">
+              <img
+                :src="item.productImage"
+                class="w-full h-full"
+                loading="lazy"
+                :alt="item.productTitle"
+                :title="item.productTitle"
+              />
             </div>
+            <div class="w-full xl:w-3/4 flex flex-col p-8">
+              <p class="text-2xl md:text-4xl my-4 font-bold">
+                {{ item.productTitle }}
+              </p>
+              <p class="text-xl md:text-2xl w-full">
+                {{ item.productContent }}
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </template>
 <script setup>
 import galvalumeImage from "@/assets/images/coil/galvalumecoil.webp";
@@ -51,8 +64,8 @@ const listProduct = ref([
 import { app_name } from "../types/types";
 const { gtag } = useGtag();
 useSeoMeta({
-  title: "Tako Baja Prima | Importir Bahan Baku Coil ",
-  ogTitle: "Tako Baja Prima | Importir Bahan Baku Coil ",
+  title: "Produk | Tako Baja Prima ",
+  ogTitle: "Produk | Tako Baja Prima ",
   ogType: "website",
   ogUrl: "https://takobajaprima.co.id/produk",
   description:

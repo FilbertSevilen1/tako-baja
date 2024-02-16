@@ -3,7 +3,7 @@
     <div class="w-full h-full">
       <div class="flex flex-col items-center">
         <div class="items-center mx-6">
-          <h1 class="text-blue-900 text-2xl md:text-4xl font-bold mt-24 text-center">
+          <h1 class="text-blue-900 text-2xl md:text-4xl font-bold mt-16 text-center">
             Kontak
           </h1>
           <h2 class="mt-4 text-xl md:text-2xl mb-8">Untuk lebih jelas dapat menghubungi kami di : </h2>
@@ -126,6 +126,20 @@
 <script setup>
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+useSeoMeta({
+  title: "Kontak | Tako Baja Prima ",
+  ogTitle: "Kontak | Tako Baja Prima ",
+  ogType: "website",
+  ogUrl: "https://takobajaprima.co.id/kontak",
+  description:
+    "Memenuhi Segala Kebutuhan Bahan Baku Coil Pabrik Anda. Dulu, Sekarang, dan Nanti",
+  ogDescription:
+    "Memenuhi Segala Kebutuhan Bahan Baku Coil Pabrik Anda. Dulu, Sekarang, dan Nanti",
+  ogImage:
+    "https://media.licdn.com/dms/image/C4D22AQE6trlQUXEuwg/feedshare-shrink_800/0/1653893851341?e=2147483647&v=beta&t=wpJH53A9EYVaGZktqKSPBx7Kog_FO2ZnN2YerLjqwao",
+  twitterCard: "summary_large_image",
+});
+
   onMounted(()=>{
     createMap(106.513292,-6.232052)
   })
