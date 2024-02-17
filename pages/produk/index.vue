@@ -45,7 +45,7 @@ const listProduct = ref([
     productImage: galvalumeImage,
     productTitle: "Galvalume",
     productContent:
-      "Galvalume adalah jenis baja, yang mengandung unsur aluminium dan zinc dalam pelapisannya. Karena galvalum merupakan nama jenis bahan baku atau bahan dasar, maka material ini bisa ditemukan pada banyak aplikasi produk.",
+      "Galvalume menghadirkan kombinasi terbaik antara seng dan aluminium, menciptakan material yang ringan, tetapi tetap kuat dan tahan terhadap korosi. Keunggulan galvalume terletak pada ketahanannya terhadap cuaca ekstrem dan paparan sinar UV, membuatnya cocok untuk lingkungan yang penuh tantangan. Dengan lapisan paduan yang unik, galvalume memberikan daya tahan superior sambil memberikan sentuhan modern dan elegan pada setiap proyek konstruksi.",
   },
   {
     productImage: ppglImage,
@@ -57,7 +57,7 @@ const listProduct = ref([
     productImage: galvanisImage,
     productTitle: "Galvanis",
     productContent:
-      "Galvanis merupakan material seng dengan tingkat konsentrasi kemurnian tinggi yaitu 99,7%.",
+      "Galvanis adalah solusi kokoh dan tahan karat yang dihasilkan dengan melapisi baja dengan lapisan seng. Proses galvanisasi memberikan perlindungan tambahan terhadap korosi, menjadikannya pilihan unggul untuk berbagai proyek konstruksi. Dengan daya tahannya terhadap cuaca dan lingkungan, produk galvanis tidak hanya memberikan keindahan visual, tetapi juga memastikan keandalan struktural jangka panjang.",
   },
 ]);
 
